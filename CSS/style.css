@@ -1,0 +1,220 @@
+* {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    }
+    body{
+        background-color: #0A0119;
+        min-height: 100vh;
+        margin: 0;
+    }
+    p{
+        font-weight: 350;
+    }
+    .contact{
+        background-color:#3C8F7D ;
+        border: 2px solid rgb(255, 255, 255) ;
+        border-radius: 10px;
+    }
+    .contact:hover{
+        margin-left: 3px;
+        color: rgb(0, 0, 0);
+        border: 2px solid #86B2F3;
+    }
+    /*Navbar*/
+    .navbar{
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: rgba(56, 54, 54, .01);
+        backdrop-filter: blur(50px);
+    }
+    .nav-title{
+        display: flex;
+        align-items: center;
+    }
+    .nav-title h1{
+        font-weight: 900;
+        font-size: 25px;
+    }
+    .nav-right ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-right ul li{
+        font-size: 1rem;
+      margin-right:25px;
+
+    }
+    .nav-items{
+        list-style-type: none;
+    }
+    .nav-links:hover{
+        color: rgb(236, 232, 9);
+    }
+    .nav-links{
+        text-decoration: none;
+    }
+
+
+
+
+    /*About Section*/
+    .about-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .about-left{
+        width: 60%;
+        display-wrap: wrap ;
+        margin-left: 3%;
+    }
+    .about-left h2,h3{
+        margin: 0px 0px;
+    }
+  .about-description{
+    text-align: justify;
+    font-weight: 300;
+    margin: 5px 0px;
+  }
+
+  /*Details Section*/
+
+  .details-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
+    .details-right{
+    width: 60%;
+    display-wrap: wrap ;
+    margin-left: 3%;
+    }
+    .details-description{
+    text-align: justify;
+    font-weight: 300;
+    margin: 5px 0px;
+    }
+
+    /*Project Section*/
+    .project-section{
+        padding-top: 4rem;
+    }
+    .project-container{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .project{
+        margin: 2%;
+        
+       
+    }
+    img:hover{
+        border-radius: 8px;
+    }
+
+    /*Contact*/
+    .contact-me h2{
+        margin: 0px 0px;
+        text-align: center;
+        
+    }
+    .contact-me h3{
+        margin: 0px 0px;
+        text-align: center;
+    }
+    .contact-me p{
+        font-size: 2em;
+        margin-top: 0px;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    /*Media*/
+    /*Mobile*/
+    @media (max-width:624px) {
+        .navbar {
+            display: block;
+        }
+        .nav-right ul li{
+       
+            margin: 0 auto;
+            padding-bottom: 3%;
+      
+          }
+
+        .nav-left{
+            display: flex;
+            justify-content: center;
+        }
+        .about-container{
+            flex-direction: column-reverse;
+        }
+        .details-container{
+            flex-direction: column;
+        }
+        .contact-me p{
+            font-size: 1.5em;
+            margin-top: 0px;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+
+    /*Footer*/
+    .footer h5{
+        margin-top: 7rem;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    
+
+    /*Tablet*/
+    @media (max-width:768px){
+        .about-left{
+            padding-right: 5%;
+        }
+        .about-right{
+        padding-right: 5%;
+        margin-top: 5%;
+    }
+
+    }
+
+    /*PC*/
+    @media (min-width:1024px){
+        .about-left{
+            padding-right: 5%;
+        }
+        .about-right{
+        margin-right: 10%;
+        margin-left: 10%;
+        
+    }
+    .about-image{
+        margin-top: 3rem;
+    }
+    .details-left{
+        padding-left: 3%;
+    }
+    .details-right{
+        margin-left: 10% ;
+        
+    }
+    }
+
