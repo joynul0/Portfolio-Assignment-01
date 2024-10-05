@@ -9,6 +9,21 @@
         min-height: 100vh;
         margin: 0;
     }
+    .line {
+        background-color: #333;
+        width: 120px;
+        height: 2px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    
+    }
+    
+    .inner-line {
+        background-color: rgb(59 130 246);
+        width: 50px;
+        height: 2px;
+    }
     p{
         font-weight: 350;
     }
@@ -141,6 +156,66 @@
         font-size: 2em;
         margin-top: 0px;
         margin-bottom: 1em;
+        text-align: center;
+    }
+
+
+
+   .contact-form{
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+   }
+    
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    
+    .input-field {
+        background-color: transparent;
+        border: 2px solid #3b82f6;
+        border-radius: 2px;
+        width: 90%;
+        padding: 0.625rem;
+        
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .input-field:focus {
+        outline: none;
+    }
+
+    .send-message{
+        text-align: center;
+    }
+    
+    .contact-button {
+        background-color: transparent;
+        border: 2px solid #3b82f6;
+        border-radius: 16px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .contact-button:hover{
+        background-color: #3b82f6;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+    footer{
+        padding: 1.25rem 0.75rem;
+        border-top: 1px solid #333;
+        margin-top: 5rem;
         text-align: center;
     }
 
